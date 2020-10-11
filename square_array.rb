@@ -1,9 +1,10 @@
 def square_array(array)
   # your code here
-  newarray = []
+  index = 0
   array.each do |element| 
-    newarray.push(element ** 2)
+    array[index] = (element ** 2)
+    index += 1
   end
-  return newarray
+  return array
 end
 
